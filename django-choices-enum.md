@@ -1,4 +1,3 @@
-id: 13
 title: Django: Choices & Enum
 date: 2015-08-01
 is_visible: 1

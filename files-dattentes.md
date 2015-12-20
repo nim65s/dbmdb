@@ -1,4 +1,3 @@
-id: 7
 title: Files d’attentes
 date: 2014-04-23
 is_visible: 1

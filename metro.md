@@ -1,4 +1,3 @@
-id: 10
 title: Métro
 date: 2014-04-23
 is_visible: 1
