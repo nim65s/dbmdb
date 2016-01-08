@@ -6,11 +6,9 @@ sites: saurel.me, laas, n7
 
 ## [Look ! The trees… They're moving !](https://youtu.be/XzugQBkUrZk?t=1m07s)
 
-Suite au projet [OffRoad](https://vimeo.com/87218362) du Musée des Abattoirs à Toulouse, Céleste Boursier-Mougenot nous
-a demandé de l’aider sur son projet pour la [Biennale de Venise](https://fr.wikipedia.org/wiki/Biennale_de_Venise).
+Suite au projet [OffRoad](https://vimeo.com/87218362) du Musée des Abattoirs à Toulouse, Céleste Boursier-Mougenot nous a demandé de l’aider sur son projet pour la [Biennale de Venise](https://fr.wikipedia.org/wiki/Biennale_de_Venise).
 
-L’œuvre transHumUs, exposée au Pavilon Français du 9 mai au 22 novembre 2015, a consisté à donner à des arbres la
-capacité de se déplacer. Leur mouvement (trèèèès lent) découlait de leur flux de sève.
+L’œuvre transHumUs, exposée au Pavilon Français du 9 mai au 22 novembre 2015, a consisté à donner à des arbres la capacité de se déplacer. Leur mouvement (trèèèès lent) découlait de leur flux de sève.
 
 Voici simplement quelques liens autour de ce projet.
 
