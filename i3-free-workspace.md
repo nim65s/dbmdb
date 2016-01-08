@@ -1,6 +1,5 @@
 title: i3 free workspace
 date: 2013-11-30
-is_visible: 1
 author: Nim
 sites: saurel.me
 

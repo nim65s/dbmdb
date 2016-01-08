@@ -1,6 +1,5 @@
 title: TransHumUs
 date: 2016-01-08
-is_visible: 1
 author: Nim
 sites: saurel.me, laas, n7
 

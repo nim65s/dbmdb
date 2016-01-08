@@ -1,6 +1,5 @@
 title: Git pre-commit hook & git commit --all
 date: 2013-11-05
-is_visible: 1
 author: Nim
 sites: saurel.me
 

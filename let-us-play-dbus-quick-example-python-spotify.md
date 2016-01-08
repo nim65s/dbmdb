@@ -1,6 +1,5 @@
 title: Let us play with D-Bus \o/ (quick example with python and spotify)
 date: 2014-07-03
-is_visible: 1
 author: Nim
 sites: saurel.me
 

@@ -1,6 +1,5 @@
 title: /!\ Travaux /!\
 date: 2015-12-21
-is_visible: 1
 author: Nim
 sites: saurel.me
 
