@@ -3,7 +3,7 @@ title: HowTo get beamer & revealjs slides from markdown
 subtitle: thanks to pandoc
 shorttitle: md → beamer & revealjs
 author: Guilhem Saurel
-date: mardi 5 janvier 2016
+date: 2016-01-05
 LAAS: fr
 mainfont: Source Serif Pro
 sansfont: Source Sans Pro
