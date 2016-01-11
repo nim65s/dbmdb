@@ -20,18 +20,20 @@ Now, one quick example: let's say that you would like to control your spotify cl
 4. Now launch a [python](http://ipython.org), with [dbus-python](http://www.freedesktop.org/wiki/Software/DBusBindings/#Python) installed (dbus-python &gt;= 1.0 works with py2 &amp; py3) and imported: `>>> import dbus`
 5. Get an interface object
 
-        :::python
-        bus = dbus.SessionBus()
-        proxy = bus.get_object('org.mpris.MediaPlayer2.spotify', '/org/mpris/MediaPlayer2')
-        interface = dbus.Interface(proxy, dbus_interface='org.mpris.MediaPlayer2.Player')
+```python
+bus = dbus.SessionBus()
+proxy = bus.get_object('org.mpris.MediaPlayer2.spotify', '/org/mpris/MediaPlayer2')
+interface = dbus.Interface(proxy, dbus_interface='org.mpris.MediaPlayer2.Player')
+```
 Where `org.mpris.MediaPlayer2.spotify` is the "bus name" you can see on the left column of D-Feet, `/org/mpris/MediaPlayer2` is the "object path" in the first level of the tree in the right column, and `org.mpris.MediaPlayer2.Player` is the "dbus interface" which will allow you to directly call methods.
 
 6. What now ? Nothing, you're done ! Wanna switch play/pause ? `interface.PlayPause()` ! Wanna stop ? `interface.Stop()`
 7. Ok, ok, if you need to get or set properties, you have to use the getter and setter in the interface `org.freedesktop.DBus.Properties`:
 
-        :::python
-        props_iface = Interface(proxy, dbus_interface='org.freedesktop.DBus.Properties')
-        props_iface.GetAll("org.mpris.MediaPlayer2.Player")
+```python
+props_iface = Interface(proxy, dbus_interface='org.freedesktop.DBus.Properties')
+props_iface.GetAll("org.mpris.MediaPlayer2.Player")
+```
 
 But it seems to be a really poor example because the spotify client just does not implement all the standard functionnalities of [org.mpris.MediaPlayer2](http://specifications.freedesktop.org/mpris-spec/latest/):( (tried `interface.Play()` ? Sorry :P)
 
@@ -40,8 +42,10 @@ Oh, and three more things:
 * You can find my script in py3 on [github](https://github.com/nim65s/scripts/blob/master/spotify.py)
 * if you really want bash:
 
-        dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify \
-            /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+```bash
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify \
+    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+```
 
 * Another example to connect your bluetooth device: [github](https://github.com/nim65s/scripts/blob/master/bt.py)
 
