@@ -1,7 +1,7 @@
 title: TransHumUs
 date: 2016-01-08
 author: Nim
-sites: saurel.me, laas, n7
+sites: saurel.me, LAAS, n7
 
 ## [Look ! The trees… They're moving !](https://youtu.be/XzugQBkUrZk?t=1m07s)
 
