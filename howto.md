@@ -1,7 +1,7 @@
 ---
-title: HowTo get beamer & revealjs slides from markdown
-subtitle: thanks to pandoc
-shorttitle: md → beamer & revealjs
+title: Quick MarkDown Reference
+subtitle: with pandoc or python
+shorttitle: md → {article,slides} in {pdf,html}
 author: Guilhem Saurel
 date: 2016-01-05
 LAAS: fr
@@ -19,12 +19,17 @@ How-to Slides
 Formating: *em* **bold** `mono` ~~strikethrough~~
 text~subscript~^superscript^
 
-## Lists
+## (Un)ordered Lists
 
 - eggs
 - butter
 - ham
 - world domination
+
+1. Thing
+2. Do
+3. Words
+4. You
 
 ## Quotes, unicode
 
@@ -43,8 +48,8 @@ class Circle(object):
         # such maths, very difficult, wow
         if not isinstance(r, (int, float)):
             raise AttributeError('wrong radius')
-        self.perimeter = 2 * π * r
-        self.surface = π * r ** 2
+        self.P = 2 * π * r
+        self.S = π * r ** 2
 ```
 
 ## Maths
@@ -63,6 +68,10 @@ $\begin{aligned}
 |   12  |  12  |    12   |    12  |
 |  123  |  123 |   123   |   123  |
 |  *1*  |  `1` |  **1**  |  ~~1~~ |
+
+## Citations
+
+Look ! The trees… They're moving ! @saurel2015
 
 # Medias
 
