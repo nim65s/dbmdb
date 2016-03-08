@@ -22,6 +22,7 @@ Voici simplement quelques liens autour de ce projet.
 * [Présentation de l’article](https://cloud.laas.fr/index.php/s/oMjKW870fdN55N0)
 
 ## Revue de presse
+* [Le petit web](http://www.petitweb.fr/actualites/comment-ce-roboticien-a-fait-danser-les-arbres)
 * [Le journal CNRS](https://lejournal.cnrs.fr/articles/larbre-qui-deambule)
 * [Brève CNRS](http://www.cnrs.fr/inee/communication/breves/b115.html)
 * [Sciences et Avenir](http://www.sciencesetavenir.fr/nature-environnement/20150515.OBS9007/a-la-biennale-de-venise-les-arbres-bougent.html)
