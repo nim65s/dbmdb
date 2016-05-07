@@ -2,6 +2,8 @@ title: TransHumUs
 date: 2016-01-08
 author: Nim
 sites: saurel.me, LAAS, n7
+category: Robotique
+tags: arts
 
 ## [Look ! The trees… They're moving !](https://youtu.be/XzugQBkUrZk?t=1m07s)
 

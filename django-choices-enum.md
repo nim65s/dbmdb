@@ -2,6 +2,8 @@ title: Django: Choices & Enum
 date: 2015-08-01
 author: Nim
 sites: saurel.me
+category: Informatique
+tags: django, python, web
 
 Choices can be efficiently represented in Django: you can use a small CharField of keys stored in the database, associated with verboses descriptions, which can even be translated.
 

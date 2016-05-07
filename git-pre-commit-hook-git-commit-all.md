@@ -2,6 +2,8 @@ title: Git pre-commit hook & git commit --all
 date: 2013-11-05
 author: Nim
 sites: saurel.me
+category: Informatique
+tags: git, scripts
 
 <p>It's generally good when a task you have to do many times a day is really fast. For example, when I want to make a commit, I just type <code>gc &lt;message&gt;</code>, because I made <code>gc</code> an alias for <code>git commit -am</code>. And when you have to commit, it's hard to go faster.</p>
 <p>But sometimes, fast is not enough.</p>

@@ -2,6 +2,8 @@ title: Métro
 date: 2014-04-23
 author: Nim
 sites: saurel.me
+category: Voyages
+tags: japon
 
 <p>Les transports en commun sont indispensable pour qui n&rsquo;a ni v&eacute;lo ni voiture, ce qui est mon cas (pour l&rsquo;instant). Quelques petites remarques sur les pratiques courantes &agrave; l&rsquo;emploi des r&eacute;seaux ferr&eacute;s Tokyo&iuml;tes:</p>
 <ul>

@@ -2,6 +2,8 @@ title: Japon
 date: 2014-04-23
 author: Nim
 sites: saurel.me
+category: Voyages
+tags: japon
 
 <p>Me voil&agrave; au Japon depuis un mois pour mon PFE. Il serait donc peut &ecirc;tre temps de reprendre ce blog ^^</p>
 <p>Vous pouvez d&rsquo;ores et d&eacute;j&agrave; trouver quelques photos sur <a title="Japon" href="https://plus.google.com/photos/+GuilhemSaurel/albums/5995747285791890001" target="_blank">google plus</a>.</p>

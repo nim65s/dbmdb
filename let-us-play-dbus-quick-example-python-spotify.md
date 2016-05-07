@@ -2,6 +2,8 @@ title: Let us play with D-Bus \o/ (quick example with python and spotify)
 date: 2014-07-03
 author: Nim
 sites: saurel.me
+category: Informatique
+tags: scripts, python
 
 > D-Bus is a free and open-source inter-process communication (IPC) system, allowing multiple, concurrently-running computer programs (processes) to communicate with one another.
 

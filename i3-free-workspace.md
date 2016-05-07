@@ -2,6 +2,8 @@ title: i3 free workspace
 date: 2013-11-30
 author: Nim
 sites: saurel.me
+category: Informatique
+tags: scripts, python, window-manager
 
 A few years ago, I decided to give a try to some Tiling Window Manager. I began with Awesome, which was&hellip; Awesome. But sometimes, you want something new, and I tried XMonad. Great, but kind of hard to configure if you are not eating Haskell for your breakfast.
 
