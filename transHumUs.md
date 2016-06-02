@@ -13,6 +13,8 @@ L’œuvre transHumUs, exposée au Pavilon Français du 9 mai au 22 novembre 201
 
 Voici simplement quelques liens autour de ce projet.
 
+## Article
+* [ICRA 2016](https://hal.archives-ouvertes.fr/hal-01206067/document)
 
 ## Photos
 * [Toulouse](https://saurel.me/photo/album/transhumus-laas/)
@@ -25,14 +27,15 @@ Voici simplement quelques liens autour de ce projet.
 
 ## Revue de presse
 * [Le petit web](http://www.petitweb.fr/actualites/comment-ce-roboticien-a-fait-danser-les-arbres)
+* [IEEE Spectrum](http://spectrum.ieee.org/automaton/robotics/robotics-software/video-friday-icra-stockholm)
 * [Le journal CNRS](https://lejournal.cnrs.fr/articles/larbre-qui-deambule)
-* [Brève CNRS](http://www.cnrs.fr/inee/communication/breves/b115.html)
 * [Sciences et Avenir](http://www.sciencesetavenir.fr/nature-environnement/20150515.OBS9007/a-la-biennale-de-venise-les-arbres-bougent.html)
+* [Brève CNRS](http://www.cnrs.fr/inee/communication/breves/b115.html)
 * [e-flux (en)](http://www.e-flux.com/announcements/celeste-boursier-mougenot/)
 
-## Présentation
+## Présentations
 * 2015-06-02: [we rome](media/we-rome_venise.pdf)
-* 2015-18-11: [actanthrope](media/actanthrope.pdf)
-
-## Article
-* [soumis à ICRA 2016 (en)](https://hal.archives-ouvertes.fr/hal-01206067/document)
+* 2015-11-18: [actanthrope](media/actanthrope.pdf)
+* 2016-03-09: [apérobo](media/des_arbres_et_des_pianos.pdf)
+* 2016-05-11: [EDSYS](media/edsys.pdf)
+* 2016-05-18: [ICRA](media/icra.pdf)
