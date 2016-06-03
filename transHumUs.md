@@ -14,7 +14,7 @@ L’œuvre transHumUs, exposée au Pavilon Français du 9 mai au 22 novembre 201
 Voici simplement quelques liens autour de ce projet.
 
 ## Article
-* [ICRA 2016](https://hal.archives-ouvertes.fr/hal-01206067/document)
+* [ICRA 2016](http://projects.laas.fr/gepetto/index.php/Publications/BibtexEntry?bibtex=transhumus)
 
 ## Photos
 * [Toulouse](https://saurel.me/photo/album/transhumus-laas/)
@@ -22,13 +22,14 @@ Voici simplement quelques liens autour de ce projet.
 
 ## Vidéos
 * [AGV](https://cloud.laas.fr/public.php?service=files&t=0578a1981c9b29d74106d3bd457c6a31): Essais en sortie d’usine chez BA Systèmes
-* [Institut Français](https://cloud.laas.fr/public.php?service=files&t=5652e7550bed8b43ca34f79ed3204488) ([Source](http://www.institutfrancais.com/fr/actualites/pavillon-francais-biennale-de-venise-2015-revolutions))
+* [Institut Français](https://cloud.laas.fr/public.php?service=files&t=5652e7550bed8b43ca34f79ed3204488)
 * [Présentation de l’article](https://cloud.laas.fr/index.php/s/oMjKW870fdN55N0)
 
 ## Revue de presse
 * [Le petit web](http://www.petitweb.fr/actualites/comment-ce-roboticien-a-fait-danser-les-arbres)
 * [IEEE Spectrum](http://spectrum.ieee.org/automaton/robotics/robotics-software/video-friday-icra-stockholm)
 * [Le journal CNRS](https://lejournal.cnrs.fr/articles/larbre-qui-deambule)
+* [Institut Français](http://www.institutfrancais.com/fr/actualites/pavillon-francais-biennale-de-venise-2015-revolutions)
 * [Sciences et Avenir](http://www.sciencesetavenir.fr/nature-environnement/20150515.OBS9007/a-la-biennale-de-venise-les-arbres-bougent.html)
 * [Brève CNRS](http://www.cnrs.fr/inee/communication/breves/b115.html)
 * [e-flux (en)](http://www.e-flux.com/announcements/celeste-boursier-mougenot/)
