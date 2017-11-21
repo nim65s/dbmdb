@@ -22,10 +22,11 @@ On prévoit donc de l’utiliser *au moins* pour ces séances:
 - 25/10: Mes voisins les Yamada (ホーホケキョ となりの山田くん, Hōhokekyo tonari no Yamada-kun), 1999.
 - 01/11: Le Voyage de Chihiro (千と千尋の神隠し, Sen to Chihiro no kamikakushi), 2001.
 - 08/11: Le Royaume des chats (猫の恩返し, Neko no ongaeshi), 2002.
-- 15/11: Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.
+- 15/11: ~~Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.~~
 - 22/11: Arrietty, le petit monde des chapardeurs (借りぐらしのアリエッティ, Karigurashi no Arietti), 2010.
 - 29/11: La Colline aux coquelicots (コクリコ坂から, Kokuriko zaka kara), 2011.
 - 06/12: Le vent se lève (風立ちぬ, Kaze tachinu), 2013.
 - 13/12: Le Conte de la princesse Kaguya (かぐや姫の物語, Kaguya-Hime no Monogatari), 2013.
+- 20/11: Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.
 
 Les amis sont les bienvenus, tant qu’ils préviennent :)
