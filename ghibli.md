@@ -27,6 +27,10 @@ On prévoit donc de l’utiliser *au moins* pour ces séances:
 - 29/11: La Colline aux coquelicots (コクリコ坂から, Kokuriko zaka kara), 2011.
 - 06/12: Le vent se lève (風立ちぬ, Kaze tachinu), 2013.
 - 13/12: Le Conte de la princesse Kaguya (かぐや姫の物語, Kaguya-Hime no Monogatari), 2013.
-- 20/11: Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.
+- 20/12: ~~Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.~~
+- 20/12: Tokyo Godfathers (東京ゴッドファーザーズ, Tōkyō Goddofāzāzu), 2003.
+- 03/01: Le Château ambulant (ハウルの動く城, Hauru no ugoku shiro), 2004.
+- 10/01: Ponyo sur la falaise (崖の上のポニョ, Gake no ue no Ponyo), 2008.
+- 17/01: Souvenirs de Marnie (思い出のマーニー, Omoide no Mānī), 2014.
 
 Les amis sont les bienvenus, tant qu’ils préviennent :)
