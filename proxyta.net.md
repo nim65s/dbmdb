@@ -210,5 +210,24 @@ use your own certificates rather than Let's Encrypt's, you can check
 ## Examples
 
 This method has been developped in the context of [oxyta.net](https://oxyta.net), a [CHATONS](https://chatons.org/)
-(for *Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires*, which can be translated into
-KITTENS, for Keen Internet Talented Teams Engaged in Network Service) from [framasoft](https://framasoft.org/).
+(for *Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires*, which can be nicely
+translated into KITTENS, for Keen Internet Talented Teams Engaged in Network Service) from our friends of
+[framasoft](https://framasoft.org/).
+
+Hence the name.
+
+In this CHATONS, we want to host several services for several organizations (french "associations loi 1901"), so we
+provide some exemples for different well known services:
+
+- [nextcloud](https://framagit.org/altermediatic/docker-atelier/tree/master/cloud)
+- [etherpad](https://framagit.org/altermediatic/docker-atelier/tree/master/pad)
+- [a static website](https://framagit.org/altermediatic/docker-atelier/tree/master/homepage), [oxyta.net](https://oxyta.net)
+- peertube (incoming…)
+- gitlab (incoming…)
+
+And I can also provide exemples for a django project (incoming…)
+
+## That's all folks
+
+Thanks for reading, and now, if you have any remarks, suggestions, or questions, feel free to participate in
+[proxyta.net](https://proxyta.net) !
