@@ -5,30 +5,21 @@ sites: saurel.me
 category: Informatique
 tags: web
 
-*NB*: All of this is already done and available on [proxyta.net](https://proxyta.net). You can just clone it and use
-it. This post is only the step by step explanation.
+*NB*: All of this is already done and available on [proxyta.net](https://proxyta.net). You can just clone it and use it. This post is only the step by step explanation.
 
 ## Who needs a reverse proxy, anyway ?
 
-If you have ever managed a server with more than web service on it, you are already familiar with some reverse proxy,
-as the good old [apache](https://httpd.apache.org/), the efficient [nginx](https://nginx.org/en/), and/or the brand new
-[traefik](https://traefik.io/).
+If you have ever managed a server with more than one web service on it, you are already familiar with some reverse proxy, as the good old [apache](https://httpd.apache.org/), the efficient [nginx](https://nginx.org/en/), and/or the brand new [traefik](https://traefik.io/).
 
-My point is that if you want to test stuffs as if they were in production (and I hope you do), while not really testing
-them in your actual production environment (and I hope you don't), you would benefit from using a reverse proxy on your
-dev setup too.
+My point is that if you want to test stuffs as if they were in production (and I hope you do), while not really testing them in your actual production environment (and I hope you don't), you would benefit from using a reverse proxy on your dev setup too.
 
-Obviously, you will not add any complexity to your dev setup, unless there is something really simple, really easy, and
-really solid. Now guess what… Yup, that's the topic of this post :)
+Obviously, you will not add any complexity to your dev setup, unless there is something really simple, really easy, and really solid. Now guess what… Yup, that's the topic of this post :)
 
-Bonus: if you do this, you can seemlessly switch a setup from test to prod and vice versa, without even letting your
-services know it !
+Bonus: if you do this, you can seemlessly switch a setup from test to prod and vice versa, without even letting your services know it !
 
 ## Bootstrap your environment
 
-To implement this is really easy, thanks to [docker](https://www.docker.com/) & [traefik](https://traefik.io/). All you
-need is to declare a network on which you will put your reverse proxy container and all the services that you want to
-expose. Let's call it "proxytanet":
+To implement this is really easy, thanks to [docker](https://www.docker.com/) & [traefik](https://traefik.io/). All you need is to declare a network on which you will put your reverse proxy container and all the services that you want to expose. Let's call it "proxytanet":
 
 ```
 docker network create proxytanet
@@ -75,15 +66,13 @@ networks:
     external: true
 ```
 
-If you don't already have something binded on the ports 80 & 8080 of your host, a `docker-compose up -d` will finish
-this setup. You can now access to traefik's dashboard, on [http://localhost:8080](http://localhost:8080).
+If you don't already have something binded on the ports 80 & 8080 of your host, a `docker-compose up -d` will finish this setup. You can now access to traefik's dashboard, on [http://localhost:8080](http://localhost:8080).
 
 *NB*: This setup is available in [proxyta.net/dev](https://proxyta.net/tree/master/dev)
 
 ## Setup your services
 
-As traefik is listening to docker.sock, you can plug any service only by declaring a few labels and putting the
-container on your `proxytanet` network. Long story short, in the `docker-compose.yml` of your app:
+As traefik is listening to docker.sock, you can plug any service only by declaring a few labels and putting the container on your `proxytanet` network. Long story short, in the `docker-compose.yml` of your app:
 
 ```
 version: '3'
@@ -102,8 +91,7 @@ networks:
     external: true
 ```
 
-In most cases, your service also need to access to other private containers, like a database or a redis, or a
-memcached. Then, you also have to put it in the (usually implicit) `default` network of its `docker-compose.yml` file:
+In most cases, your service also need to access to other private containers, like a database or a redis, or a memcached. Then, you also have to put it in the (usually implicit) `default` network of its `docker-compose.yml` file:
 
 ```
 version: '3'
@@ -130,21 +118,17 @@ Just don't forget to tell traefik on which of the networks it has to listen, wit
 
 ## One more thing
 
-You're almost done: the last thing you need is to configure a DNS that will redirect `your_app.local` to your ip. In a
-dev / test environment, it's just a matter of one line in `/etc/hosts`
+You're almost done: the last thing you need is to configure a DNS that will redirect `your_app.local` to your ip. In a dev / test environment, it's just a matter of one line in `/etc/hosts`
 
 ```
 127.0.0.1 your_app.local www.your_app.local
 ```
 
-As you may have noticed, the configuration is `your_app.${DOMAIN_NAME:-local}`. In other words, if you have a
-`DOMAIN_NAME` variable (defined in your environment or in a `.env` file) set to `exemple.org`, traefik will make your
-service available on `your_app.example.org`.
+As you may have noticed, the configuration is `your_app.${DOMAIN_NAME:-local}`. In other words, if you have a `DOMAIN_NAME` variable (defined in your environment or in a `.env` file) set to `exemple.org`, traefik will make your service available on `your_app.example.org`.
 
 ## Production setup
 
-In production, you can keep the architecture and the `proxytanet` network, all you need to change is the `traefik.toml`
-configuration to generate SSL certificates with [Let's Encrypt](https://letsencrypt.org/):
+In production, you can keep the architecture and the `proxytanet` network, all you need to change is the `traefik.toml` configuration to generate SSL certificates with [Let's Encrypt](https://letsencrypt.org/):
 
 ```
 defaultEntryPoints = ["http", "https"]
@@ -200,24 +184,17 @@ networks:
     external: true
 ```
 
-(don't forget to setup the `ACME_EMAIL` variable in your environment or a `.env` file, te receive informations from
-Let's Encrypt.)
+(don't forget to setup the `ACME_EMAIL` variable in your environment or a `.env` file, te receive informations from Let's Encrypt.)
 
-*NB*: This setup is available in [proxyta.net/prod-le](https://proxyta.net/tree/master/prod-le) ; and if you prefer to
-use your own certificates rather than Let's Encrypt's, you can check
-[proxyta.net/prod-ssl](https://proxyta.net/tree/master/prod-ssl)
+*NB*: This setup is available in [proxyta.net/prod-le](https://proxyta.net/tree/master/prod-le) ; and if you prefer to use your own certificates rather than Let's Encrypt's, you can check [proxyta.net/prod-ssl](https://proxyta.net/tree/master/prod-ssl)
 
 ## Examples
 
-This method has been developped in the context of [oxyta.net](https://oxyta.net), a [CHATONS](https://chatons.org/)
-(for *Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires*, which can be nicely
-translated into KITTENS, for Keen Internet Talented Teams Engaged in Network Service) from our friends of
-[framasoft](https://framasoft.org/).
+This method has been developped in the context of [oxyta.net](https://oxyta.net), a [CHATONS](https://chatons.org/) (for *Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires*, which can be nicely translated into KITTENS, for Keen Internet Talented Teams Engaged in Network Service) from our friends of [framasoft](https://framasoft.org/).
 
 Hence the name.
 
-In this CHATONS, we want to host several services for several organizations (french "associations loi 1901"), so we
-provide some exemples for different well known services:
+In this CHATONS, we want to host several services for several organizations (french "associations loi 1901"), so we provide some exemples for different well known services:
 
 - [nextcloud](https://framagit.org/altermediatic/docker-atelier/tree/master/cloud)
 - [etherpad](https://framagit.org/altermediatic/docker-atelier/tree/master/pad)
@@ -229,5 +206,4 @@ And I can also provide exemples for a django project (incoming…)
 
 ## That's all folks
 
-Thanks for reading, and now, if you have any remarks, suggestions, or questions, feel free to participate in
-[proxyta.net](https://proxyta.net) !
+Thanks for reading, and now, if you have any remarks, suggestions, or questions, feel free to participate in [proxyta.net](https://proxyta.net) !
