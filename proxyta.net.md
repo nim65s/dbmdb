@@ -5,7 +5,7 @@ sites: saurel.me
 category: Informatique
 tags: web
 
-*NB*: All of this is already done and available on [proxyta.net](https://proxyta.net). You can just clone it and use it. This post is only the step by step explanation.
+*NB*: All of this is already done and available on [proxyta.net](http://proxyta.net). You can just clone it and use it. This post is only the step by step explanation.
 
 ## Who needs a reverse proxy, anyway ?
 
@@ -27,7 +27,7 @@ docker network create proxytanet
 
 Then, use a simple, ready-to-go, `traefik.toml` configuration file:
 
-```
+``` ini
 defaultEntryPoints = ["http"]
 
 [entryPoints]
@@ -68,7 +68,7 @@ networks:
 
 If you don't already have something binded on the ports 80 & 8080 of your host, a `docker-compose up -d` will finish this setup. You can now access to traefik's dashboard, on [http://localhost:8080](http://localhost:8080).
 
-*NB*: This setup is available in [proxyta.net/dev](https://proxyta.net/tree/master/dev)
+*NB*: This setup is available in [proxyta.net/dev](http://proxyta.net/tree/master/dev)
 
 ## Setup your services
 
@@ -93,7 +93,7 @@ networks:
 
 In most cases, your service also need to access to other private containers, like a database or a redis, or a memcached. Then, you also have to put it in the (usually implicit) `default` network of its `docker-compose.yml` file:
 
-```
+``` 
 version: '3'
 
 services:
@@ -130,7 +130,7 @@ As you may have noticed, the configuration is `your_app.${DOMAIN_NAME:-local}`. 
 
 In production, you can keep the architecture and the `proxytanet` network, all you need to change is the `traefik.toml` configuration to generate SSL certificates with [Let's Encrypt](https://letsencrypt.org/):
 
-```
+``` ini
 defaultEntryPoints = ["http", "https"]
 
 [entryPoints]
@@ -161,7 +161,7 @@ defaultEntryPoints = ["http", "https"]
 
 And the associated `docker-compose.yml`:
 
-```
+``` 
 version: '3'
 
 services:
@@ -186,7 +186,7 @@ networks:
 
 (don't forget to setup the `ACME_EMAIL` variable in your environment or a `.env` file, te receive informations from Let's Encrypt.)
 
-*NB*: This setup is available in [proxyta.net/prod-le](https://proxyta.net/tree/master/prod-le) ; and if you prefer to use your own certificates rather than Let's Encrypt's, you can check [proxyta.net/prod-ssl](https://proxyta.net/tree/master/prod-ssl)
+*NB*: This setup is available in [proxyta.net/prod-le](http://proxyta.net/tree/master/prod-le) ; and if you prefer to use your own certificates rather than Let's Encrypt's, you can check [proxyta.net/prod-ssl](http://proxyta.net/tree/master/prod-ssl)
 
 ## Examples
 
@@ -206,4 +206,4 @@ And I can also provide exemples for a django project (incoming…)
 
 ## That's all folks
 
-Thanks for reading, and now, if you have any remarks, suggestions, or questions, feel free to participate in [proxyta.net](https://proxyta.net) !
+Thanks for reading, and now, if you have any remarks, suggestions, or questions, feel free to participate in [proxyta.net](http://proxyta.net) !
