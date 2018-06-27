@@ -199,7 +199,7 @@ In this CHATONS, we want to host several services for several organizations (fre
 - [nextcloud](https://framagit.org/altermediatic/docker-atelier/tree/master/cloud)
 - [etherpad](https://framagit.org/altermediatic/docker-atelier/tree/master/pad)
 - [a static website](https://framagit.org/altermediatic/docker-atelier/tree/master/homepage), [oxyta.net](https://oxyta.net)
-- peertube (incoming…)
+- [peertube](https://framagit.org/altermediatic/docker-atelier/tree/master/peertube)
 - gitlab (incoming…)
 
 And I can also provide exemples for a django project (incoming…)
