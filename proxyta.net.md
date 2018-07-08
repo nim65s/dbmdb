@@ -93,7 +93,7 @@ networks:
 
 In most cases, your service also need to access to other private containers, like a database or a redis, or a memcached. Then, you also have to put it in the (usually implicit) `default` network of its `docker-compose.yml` file:
 
-``` 
+```
 version: '3'
 
 services:
@@ -161,7 +161,7 @@ defaultEntryPoints = ["http", "https"]
 
 And the associated `docker-compose.yml`:
 
-``` 
+```
 version: '3'
 
 services:
@@ -200,6 +200,7 @@ In this CHATONS, we want to host several services for several organizations (fre
 - [etherpad](https://framagit.org/altermediatic/docker-atelier/tree/master/pad)
 - [a static website](https://framagit.org/altermediatic/docker-atelier/tree/master/homepage), [oxyta.net](https://oxyta.net)
 - [peertube](https://framagit.org/altermediatic/docker-atelier/tree/master/peertube)
+- [matrix](https://framagit.org/altermediatic/docker-atelier/tree/master/matrix)
 - gitlab (incoming…)
 
 And I can also provide exemples for a django project (incoming…)
